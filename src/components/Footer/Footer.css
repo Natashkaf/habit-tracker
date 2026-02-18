@@ -1,0 +1,13 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin:5px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+}
