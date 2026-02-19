@@ -1,0 +1,97 @@
+.modal{
+    width: 50%;
+    height:calc(100vh - 30px);
+    border-radius: 15px;
+    background-color: #D8E3E7;
+    box-shadow: 0 0  15px 10px #CCCCCC;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    margin-top:10px;
+    position: relative;
+}
+.modalHeader {
+    text-align: center;
+    color: #126E82;
+    font-size: 48px;
+    border: 2px solid #126E82;
+    border-radius: 15px;
+    margin: 10px 50px 40px 50px;
+}
+.modal-form{
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    color: #126E82;
+    margin: 10px;
+    align-items: center;
+}
+.input{
+    width: 70%;
+    height: 60px;
+    border: none;
+    margin: 10px;
+    border-radius: 15px;
+    font-size: 24px;
+}
+.input:focus{
+    outline: none;
+    font-family: 'mainFont', sans-serif;
+    color: #126E82;
+    font-weight: bold;
+}
+.button-login{
+    width: 70%;
+    height: 70px;
+    border: none;
+    border-radius: 15px;
+    font-size: 32px;
+    font-family: 'mainFont', sans-serif;
+    color: #126E82;
+    background-color: #51C4D3;
+    margin: 10px;
+    box-shadow: 0 0  20px 5px #51C4D3;
+    transform: translateY(-2px);
+    transition: 0.3s ease-in-out;
+    padding: 15px;
+}
+.button-login:hover{
+    background-color: #D8E3E7;
+    border:2px solid #51C4D3;
+    transform: translateY(2px);
+    transition: 0.3s ease-in-out;
+}
+.button-closed {
+    width: 40px;
+    height: 30px;
+    border: none;
+    background: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    content: ' ';
+    padding: 0;
+}
+.button-closed:after, .button-closed:before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 5px;
+    background-color: #126E82;
+    top:50%;
+    left:50%;
+    border-radius: 15px;
+}
+.button-closed::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.button-closed::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.button-closed:hover::before, .button-closed:hover::after {
+    background-color: #51C4D3;
+    filter: drop-shadow(0 0 10px #51C4D3);
+}

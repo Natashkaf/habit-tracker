@@ -1,10 +1,10 @@
 import './Header.css'
-function Header(){
+function Header({openModal}){
 return(
     <div className="header-container">
         <div> <h1 className="name-site">DayMark</h1></div>
     <div>
-        <button className="button">
+        <button className="button" onClick={openModal}>
             Вход/регистрация
         </button>
         <button className="button">
