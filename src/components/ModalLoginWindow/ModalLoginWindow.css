@@ -14,7 +14,6 @@
     text-align: center;
     color: #126E82;
     font-size: 48px;
-    border: 2px solid #126E82;
     border-radius: 15px;
     margin: 10px 50px 40px 50px;
 }
@@ -33,6 +32,9 @@
     margin: 10px;
     border-radius: 15px;
     font-size: 24px;
+    font-family: 'mainFont', sans-serif;
+    color: #126E82;
+    text-align: center;
 }
 .input:focus{
     outline: none;
@@ -94,4 +96,37 @@
 .button-closed:hover::before, .button-closed:hover::after {
     background-color: #51C4D3;
     filter: drop-shadow(0 0 10px #51C4D3);
+}
+.tabButtonContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.tabButton {
+    width: 180px;
+    height: 60px;
+    border: none;
+    border-bottom: 2px solid grey;
+    border-top:2px solid grey;
+    background-color: transparent;
+    margin: 10px;
+    font-family: 'mainFont', sans-serif;
+    font-size: 20px;
+    color: gray;
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+    box-shadow: 0 0  20px 5px gray;
+}
+.tabButton:hover {
+    transition: 0.3s ease-in-out;
+    background-color: white;
+}
+.activeTabButton {
+    background-color: white;
+    color: #126E82;
+    border-bottom: 2px solid #126E82;
+    border-top:2px solid #126E82;
+    font-weight: bold;
+    box-shadow: 0 0  20px 5px #51C4D3;
 }
